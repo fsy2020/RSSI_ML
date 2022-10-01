@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=""Microsoft YaHei""] ;
+edge [fontname=""Microsoft YaHei""] ;
+0 [label="WAP063 <= 1.045\nentropy = 1.0\nsamples = 3673\nvalue = [1832, 1841]\nclass = 右下角", fillcolor="#feffff"] ;
+1 [label="WAP007 <= 0.477\nentropy = 0.577\nsamples = 2047\nvalue = [1766, 281]\nclass = 左上角", fillcolor="#e99559"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="WAP028 <= 2.668\nentropy = 0.274\nsamples = 1763\nvalue = [1680, 83]\nclass = 左上角", fillcolor="#e68743"] ;
+1 -> 2 ;
+3 [label="entropy = 0.197\nsamples = 1733\nvalue = [1680, 53]\nclass = 左上角", fillcolor="#e6853f"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 30\nvalue = [0, 30]\nclass = 右下角", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="WAP039 <= 0.674\nentropy = 0.885\nsamples = 284\nvalue = [86, 198]\nclass = 右下角", fillcolor="#8fc8f0"] ;
+1 -> 5 ;
+6 [label="entropy = 0.176\nsamples = 189\nvalue = [5, 184]\nclass = 右下角", fillcolor="#3ea0e6"] ;
+5 -> 6 ;
+7 [label="entropy = 0.603\nsamples = 95\nvalue = [81, 14]\nclass = 左上角", fillcolor="#e9975b"] ;
+5 -> 7 ;
+8 [label="WAP064 <= 1.765\nentropy = 0.245\nsamples = 1626\nvalue = [66, 1560]\nclass = 右下角", fillcolor="#41a1e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="entropy = 0.0\nsamples = 1548\nvalue = [0, 1548]\nclass = 右下角", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="WAP073 <= 1.599\nentropy = 0.619\nsamples = 78\nvalue = [66, 12]\nclass = 左上角", fillcolor="#ea985d"] ;
+8 -> 10 ;
+11 [label="entropy = 0.872\nsamples = 41\nvalue = [29, 12]\nclass = 左上角", fillcolor="#f0b58b"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 37\nvalue = [37, 0]\nclass = 左上角", fillcolor="#e58139"] ;
+10 -> 12 ;
+}
